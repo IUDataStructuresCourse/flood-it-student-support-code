@@ -15,6 +15,7 @@ public class Board {
     Tile[][] tiles;
     int size;
 
+
     /**
      * Constructs a square game board of the given size, initializes the list of
      * inside tiles to include just the tile in the upper left corner, and puts
