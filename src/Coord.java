@@ -65,25 +65,17 @@ public class Coord implements Comparable<Coord> {
   }
 
   /**
-   * TODO
-   * 
    * Returns true iff this Coord is visible on a board of the given size.
    */
   public boolean onBoard(int size) {
-    // return true;
     return x >= 0 && x < size && y >= 0 && y < size;
   }
 
   /**
-   * TODO
-   * 
    * Returns a list of the immediate board coordinates of this Coord's north,
    * south, east, and west neighbors.
    */
   public List<Coord> neighbors(int size) {
-    // TODO
-    // return null;
-
     List<Coord> ans = new ArrayList<>();
     for (Coord coord : new Coord[] { up(), down(), right(), left() }) // NSEW
       if (coord.onBoard(size))
